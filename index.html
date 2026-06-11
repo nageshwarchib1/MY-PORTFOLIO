@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nageshwer Chib | Software Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <meta name="description"
+        content="Portfolio of Nageshwer Chib, Computer Science student, Software Developer, and AI Enthusiast.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="glass-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">NC<span class="dot">.</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="themeToggle" class="glass-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="menuToggle" class="glass-btn mobile-only" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="greeting" data-aos="fade-up">Hello, I'm</p>
+                    <h1 class="name" data-aos="fade-up" data-aos-delay="100">Nageshwer Chib</h1>
+                    <h2 class="title" data-aos="fade-up" data-aos-delay="200">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="intro" data-aos="fade-up" data-aos-delay="300">
+                        Passionate Computer Science student focused on software development, artificial intelligence,
+                        and innovative technology solutions.
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#" class="btn btn-primary"
+                            onclick="alert('Resume download functionality will be connected here.')">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links mt-4" data-aos="fade-up" data-aos-delay="500">
+                        <a href="https://www.linkedin.com/in/nageshwar-chib-7aa410334?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                            target="_blank" class="social-icon" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/nageshwarchib1" target="_blank" class="social-icon"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:Chibnageshwar@gmail.com" class="social-icon" aria-label="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="blob-wrapper">
+                        <!-- Profile Image -->
+                        <img src="./assets/images/nagu.jpeg" alt="Nageshwer Chib" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="gradient-text">About Me</h2>
+                    <p>My journey and professional overview</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text glass card" data-aos="fade-right">
+                        <h3>Professional Summary</h3>
+                        <p>I am a dedicated Computer Science student with a strong foundation in software engineering
+                            principles and a deep interest in Artificial Intelligence. I thrive on solving complex
+                            problems and building efficient, scalable applications.</p>
+
+                        <h3 class="mt-2">Career Objective</h3>
+                        <p>To leverage my technical skills and passion for innovation in a dynamic software development
+                            role, contributing to impactful projects while continuously expanding my knowledge in AI and
+                            emerging technologies.</p>
+
+                        <h3 class="mt-2">Strengths & Interests</h3>
+                        <div class="tags">
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">Analytical Thinking</span>
+                            <span class="tag">Team Collaboration</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                    </div>
+
+                    <div class="about-stats" data-aos="fade-left">
+                        <!-- Achievements Counter -->
+                        <div class="stats-grid">
+                            <div class="stat-card glass">
+                                <i class="fa-solid fa-code stat-icon"></i>
+                                <h3 class="counter" data-target="5">0</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-card glass">
+                                <i class="fa-solid fa-certificate stat-icon"></i>
+                                <h3 class="counter" data-target="8">0</h3>
+                                <p>Certifications Earned</p>
+                            </div>
+                            <div class="stat-card glass">
+                                <i class="fa-solid fa-microchip stat-icon"></i>
+                                <h3 class="counter" data-target="5">0</h3>
+                                <p>Technologies Learned</p>
+                            </div>
+                            <div class="stat-card glass">
+                                <i class="fa-solid fa-laptop-code stat-icon"></i>
+                                <h3 class="counter" data-target="200">0</h3>
+                                <p>Problems Solved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="gradient-text">Technical Skills</h2>
+                    <p>My core competencies and verified expertise</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Card 1 -->
+                    <div class="skill-card glass" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-robot skill-icon ai-color"></i>
+                            <h3>Artificial Intelligence</h3>
+                        </div>
+                        <p class="skill-desc">Machine Learning, Data Analysis, and AI concepts implementation.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar ai-bg" data-width="85%"></div>
+                        </div>
+                        <div class="certificate-placeholder" onclick="alert('Upload certificate feature pending.')">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>Add Endorsement / Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2 -->
+                    <div class="skill-card glass" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-database skill-icon db-color"></i>
+                            <h3>MySQL</h3>
+                        </div>
+                        <p class="skill-desc">Database design, complex queries, and data management.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar db-bg" data-width="90%"></div>
+                        </div>
+                        <div class="certificate-placeholder">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>Add Endorsement / Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3 -->
+                    <div class="skill-card glass" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-network-wired skill-icon ds-color"></i>
+                            <h3>Data Structures</h3>
+                        </div>
+                        <p class="skill-desc">Algorithm design, complexity analysis, and optimization.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar ds-bg" data-width="88%"></div>
+                        </div>
+                        <div class="certificate-placeholder">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>Add Endorsement / Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4 -->
+                    <div class="skill-card glass" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-python skill-icon py-color"></i>
+                            <h3>Python Programming</h3>
+                        </div>
+                        <p class="skill-desc">Backend logic, scripting, and data manipulation libraries.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar py-bg" data-width="92%"></div>
+                        </div>
+                        <div class="certificate-placeholder">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>Add Endorsement / Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 5 -->
+                    <div class="skill-card glass" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-c skill-icon c-color"></i>
+                            <h3>C Programming</h3>
+                        </div>
+                        <p class="skill-desc">Low-level memory management and core computing principles.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar c-bg" data-width="80%"></div>
+                        </div>
+                        <div class="certificate-placeholder">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>Add Endorsement / Certificate</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 6 -->
+                    <div class="skill-card glass" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-people-arrows skill-icon soft-color"></i>
+                            <h3>Comm. & Problem Solving</h3>
+                        </div>
+                        <p class="skill-desc">Effective teamwork, technical communication, and agile mindset.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar soft-bg" data-width="95%"></div>
+                        </div>
+                        <div class="certificate-placeholder">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>Add Endorsement / Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Timelines -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="timeline-container">
+                    <!-- Education -->
+                    <div class="timeline-column" data-aos="fade-right">
+                        <div class="section-header align-left">
+                            <h2 class="gradient-text">Education</h2>
+                            <p>My academic background</p>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2024- Present</span>
+                                <h3>Graduation</h3>
+                                <h4>Nagarjuna College Of Engineering And Technology</h4>
+                                <p>Bachelor of Science in Computer Science. Specialized in Artificial Intelligence and
+                                    Machine Learning.</p>
+                            </div>
+
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2022 - 2024</span>
+                                <h3>School Education</h3>
+                                <h4>Oriental Academy, Jammu and Kashmir</h4>
+                                <p>Foundational education with academic excellence.</p>
+                            </div>
+                            <!-- Certifications integrated into education as requested -->
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Ongoing</span>
+                                <h3>Certifications</h3>
+                                <h4>Various Platforms</h4>
+                                <p>Actively pursuing advanced certifications in AI and Full-Stack Development.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="timeline-column" data-aos="fade-left">
+                        <div class="section-header align-left">
+                            <h2 class="gradient-text">Experience</h2>
+                            <p>Professional path</p>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Future</span>
+                                <h3>Internships</h3>
+                                <h4>Company Name</h4>
+                                <p>Ready to apply software development skills in a real-world tech environment.</p>
+                            </div>
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2025 - Present</span>
+                                <h3>Freelance Work</h3>
+                                <h4>Independent</h4>
+                                <p>Developing responsive websites and small-scale applications for local businesses.</p>
+                            </div>
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2025</span>
+                                <h3>Research Projects</h3>
+                                <h4>University Setup</h4>
+                                <p>Contributed to AI model training and data preprocessing scripts for academic
+                                    research.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="gradient-text">Featured Projects</h2>
+                    <p>Recent work and technical implementations</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/images/toctutor.png" alt="AI Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/nageshwarchib1/toctutor" target="_blank" class="icon-link"
+                                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://nageshwarchib1.github.io/toctutor/index.html" target="_blank"
+                                    class="icon-link" aria-label="Live Demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>TocTutor</h3>
+                            <p>TOCTUTOR is an intelligent learning platform designed to provide personalized educational
+                                resources, guidance, and interactive learning experiences for students.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">GEMINI-API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/images/forestgaurd.png" alt="Data Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/nageshwarchib1/forestgaurd" class="icon-link"
+                                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link" aria-label="Live Demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Forest-GAURAD
+                            </h3>
+                            <p>Developed a machine learning model to predict forest fire occurrences using environmental
+                                and meteorological data.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">DEEP LEARNING</span>
+                                <span class="tech-badge">Tensorflow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-img-wrapper">
+                            <img src="./assets/images/PORTFOLIO.png" alt="Web Dev Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="#" class="icon-link" aria-label="GitHub"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link" aria-label="Live Demo"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A modern, responsive portfolio built to showcase projects and technical skills elegantly.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Gallery Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="gradient-text">Certifications</h2>
+                    <p>Verified skills and professional courses</p>
+                </div>
+
+                <div class="filter-container" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="database">Database</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+
+                <div class="cert-gallery">
+                    <!-- Gallery Items -->
+                    <div class="cert-item programming ai glass">
+                        <img src="./assets/certificates/2.jpeg" alt="Time Series Analysis using Python Certificate"
+                            style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4>Time Series Analysis using Python</h4>
+                        <p>Infosys Springboard</p>
+                    </div>
+                    <div class="cert-item ai glass">
+                        <img src="./assets/certificates/1.jpeg" alt="Project on Time Series Analysis Certificate"
+                            style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4>Time Series Analysis - MNCs Attrition Patterns</h4>
+                        <p>Infosys Springboard</p>
+                    </div>
+                    <div class="cert-item ai other glass">
+                        <img src="./assets/certificates/3.jpeg"
+                            alt="Mathematical and Statistics Foundations Certificate"
+                            style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4>Mathematical and Statistics Foundations</h4>
+                        <p>Infosys Springboard</p>
+                    </div>
+                    <div class="cert-item ai other glass">
+                        <img src="./assets/certificates/4.jpeg"
+                            alt="Advanced Statistics for Machine Learning Certificate"
+                            style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4>Advanced Statistics for Machine Learning</h4>
+                        <p>Infosys Springboard</p>
+                    </div>
+                    <div class="cert-item ai glass">
+                        <img src="./assets/certificates/6.jpeg" alt="Extending Machine Learning Algorithms Certificate"
+                            style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4>Extending Machine Learning Algorithms</h4>
+                        <p>Infosys Springboard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="gradient-text">Get In Touch</h2>
+                    <p>Let's discuss projects, opportunities, or just say hello.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-card glass">
+                            <i class="fa-solid fa-envelope contact-icon"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:Chibnageshwar@gmail.com">Chibnageshwar@gmail.com</a></p>
+                        </div>
+                        <div class="contact-card glass">
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <h3>Phone</h3>
+                            <p><a href="tel:+916006108751">+91 60061 08751</a></p>
+                        </div>
+                        <div class="contact-card glass">
+                            <i class="fa-solid fa-location-dot contact-icon"></i>
+                            <h3>Location</h3>
+                            <p>Banglore,India</p>
+                        </div>
+                        <div class="contact-card glass">
+                            <i class="fa-solid fa-share-nodes contact-icon"></i>
+                            <h3>Social Profiles</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/nageshwar-chib-7aa410334?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                                    target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/nageshwarchib1" target="_blank" class="social-icon"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <h3 class="form-title">Send a Message</h3>
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Nageshwer Chib</h2>
+                <p>Software Developer | AI Enthusiast</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nageshwar-chib-7aa410334?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                        target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nageshwarchib1" target="_blank" class="social-icon"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Nageshwer Chib. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
